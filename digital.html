@@ -6,10 +6,19 @@
     <meta name="description" content="Aprende qué es la identidad digital, cómo protegerla y prevenir el robo de identidad en línea con consejos prácticos y medidas de seguridad.">
     <title>Qué es la identidad digital y cómo protegerla | BuroDePortal</title>
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    <link rel="preload" href="fonts/Sora-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Sora-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Bitter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Bitter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Rubik-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        h1,h2,h3,h4,h5,h6,ol,p,ul{margin-bottom:2rem}.navbar-link,.navbar-logo,a{text-decoration:none}.navbar-link::after,h2::after{background:var(--gradient2);bottom:0}.hero::before,.navbar-link::after,h2::after{content:'';position:absolute;left:0}.cookie-btn,.navbar-link,.navbar-logo{font-family:var(--font-nav)}:root{--color-primary:#7B2CBF;--color-background:#2E1F27;--color-accent1:#FF7F11;--color-accent2:#F9DC5C;--color-additional1:#5C5470;--color-additional2:#C08497;--gradient1:linear-gradient(135deg, #2E1F27, #7B2CBF);--gradient2:linear-gradient(45deg, #FF7F11, #F9DC5C);--gradient3:linear-gradient(90deg, #5C5470, #C08497);--gradient4:linear-gradient(135deg, #7B2CBF, #C08497);--gradient5:radial-gradient(circle, #F9DC5C 0%, #2E1F27 100%);--font-nav:'Sora',sans-serif;--font-heading:'Bitter',serif;--font-text:'Rubik',sans-serif;--shadow-sm:0 2px 4px rgba(0, 0, 0, 0.1);--shadow-md:0 4px 8px rgba(0, 0, 0, 0.12);--shadow-lg:0 10px 20px rgba(0, 0, 0, 0.15);--transition-fast:0.3s ease;--transition-medium:0.5s ease;--transition-slow:0.8s ease;--border-radius-sm:4px;--border-radius-md:8px;--border-radius-lg:16px}*,::after,::before{margin:0;padding:0;box-sizing:border-box}html{font-size:62.5%;scroll-behavior:smooth}body{font-family:var(--font-text);font-size:1.6rem;line-height:1.6;color:#fff;background-color:var(--color-background);overflow-x:hidden}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700;line-height:1.2;color:#fff}h1{font-size:4.2rem;margin-bottom:3rem}h2{font-size:3.6rem;position:relative;padding-bottom:1.5rem}h2::after{width:8rem;height:.4rem;border-radius:var(--border-radius-sm)}h3{font-size:2.8rem}.navbar-logo,h4{font-size:2.4rem}a{color:var(--color-accent1);transition:color var(--transition-fast)}.navbar-link:hover,a:hover{color:var(--color-accent2)}ol,ul{padding-left:2rem}li{margin-bottom:.8rem}.container{width:100%;max-width:120rem;margin:0 auto;padding:0 2rem}.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;background:var(--color-background);box-shadow:var(--shadow-md);transition:transform var(--transition-medium)}.hero,.hero-content,.navbar-link{position:relative}.navbar.hidden{transform:translateY(-100%)}.navbar-container{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2rem}.navbar-logo{font-weight:700;color:#fff;background:var(--gradient4);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition:opacity var(--transition-fast)}.navbar-logo:hover{opacity:.9}.navbar-menu{display:flex;list-style:none;margin:0;padding:0}.navbar-item{margin-left:3rem}.navbar-link{font-size:1.6rem;color:#fff;padding:.5rem 0;transition:color var(--transition-fast)}.navbar-link::after{width:0;height:2px;transition:width var(--transition-fast)}.cookie-accept:hover,.navbar-toggle span{background-color:#fff}.navbar-link:hover::after{width:100%}.navbar-toggle{display:none;background:0 0;border:none;cursor:pointer;padding:.5rem}.navbar-toggle span{display:block;width:2.5rem;height:.3rem;margin:.5rem 0;border-radius:var(--border-radius-sm);transition:transform var(--transition-fast),opacity var(--transition-fast)}.hero{min-height:100vh;display:flex;align-items:center;background:var(--gradient1);overflow:hidden;padding-top:8rem}.hero::before{top:0;width:100%;height:100%;background-image:url('../image/pattern.svg');background-size:cover;opacity:.05;z-index:1}.hero-content{z-index:2;max-width:70rem}.hero-title{font-size:5.6rem;margin-bottom:2rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.2)}.hero-subtitle{font-size:2.2rem;margin-bottom:3rem;color:rgba(255,255,255,.9)}.cookie-notice{position:fixed;bottom:0;left:0;width:100%;background:var(--gradient4);padding:2rem;z-index:1001;box-shadow:var(--shadow-lg);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem}.cookie-notice.hidden{display:none}.cookie-text{flex:1;min-width:28rem;margin:0}.cookie-buttons{display:flex;gap:1rem}.cookie-btn{padding:1rem 2rem;border:none;border-radius:var(--border-radius-sm);font-size:1.4rem;cursor:pointer;transition:background-color var(--transition-fast),color var(--transition-fast)}.cookie-accept{background-color:var(--color-accent2);color:var(--color-background)}.cookie-more{background-color:transparent;color:#fff;border:1px solid #fff}.cookie-more:hover{background-color:rgba(255,255,255,.1)}@media (max-width:1500px){html{font-size:60%}.container{max-width:110rem}}@media (max-width:1200px){html{font-size:58%}.container{max-width:100rem}.hero-title{font-size:5rem}}@media (max-width:900px){html{font-size:56%}.hero-title{font-size:4.5rem}}@media (max-width:700px){.navbar-menu{position:fixed;top:7rem;left:0;width:100%;background-color:var(--color-background);flex-direction:column;align-items:center;padding:2rem 0;box-shadow:var(--shadow-md);transform:translateY(-100%);opacity:0;visibility:hidden;transition:transform var(--transition-medium),opacity var(--transition-medium),visibility var(--transition-medium)}.navbar-menu.active{transform:translateY(0);opacity:1;visibility:visible}.navbar-item{margin:1rem 0}.navbar-toggle{display:block}.navbar-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.navbar-toggle.active span:nth-child(2){opacity:0}.navbar-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.hero-title{font-size:4rem}.hero-subtitle{font-size:2rem}}@media (max-width:550px){html{font-size:54%}.hero-title{font-size:3.6rem}.section{padding:5rem 0}}@media (max-width:450px){html{font-size:52%}.hero-title{font-size:3.2rem}.hero-subtitle{font-size:1.8rem}.container{padding:0 1.5rem}}@media (max-width:350px){html{font-size:50%}.hero-title{font-size:3rem}}@media (max-width:300px){html{font-size:48%}.container{padding:0 1rem}}
+    </style>
 </head>
 <body>
-    <!-- Навигация -->
     <nav class="navbar">
         <div class="navbar-container container">
             <a href="index.html" class="navbar-logo">burodeportal.com</a>
@@ -20,18 +29,16 @@
             </button>
             <ul class="navbar-menu">
                 <li class="navbar-item"><a href="index.html" class="navbar-link">Inicio</a></li>
-                <li class="navbar-item"><a href="digital.html" class="navbar-link">Identidad Digital</a></li>
-                <li class="navbar-item"><a href="historial.html" class="navbar-link">Historial Financiero</a></li>
-                <li class="navbar-item"><a href="apps.html" class="navbar-link">Apps Financieras</a></li>
+                <li class="navbar-item"><a href="digital.html" class="navbar-link">Digital</a></li>
+                <li class="navbar-item"><a href="historial.html" class="navbar-link">Historial</a></li>
+                <li class="navbar-item"><a href="apps.html" class="navbar-link">Apps</a></li>
                 <li class="navbar-item"><a href="gastos.html" class="navbar-link">Herramientas</a></li>
                 <li class="navbar-item"><a href="glosario.html" class="navbar-link">Glosario</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Обертка для контента (для блюра при активном уведомлении о куках) -->
     <div class="content-wrapper">
-        <!-- Герой-секция -->
         <section class="hero" style="background: var(--gradient4);">
             <div class="container">
                 <div class="hero-content">
@@ -41,10 +48,8 @@
             </div>
         </section>
 
-        <!-- Основное содержание -->
         <section class="section">
             <div class="container">
-                <!-- Дисклеймер -->
                 <div class="disclaimer">
                     <p><strong>Aviso importante:</strong> Este sitio web no es una entidad gubernamental ni está afiliado oficialmente con ninguna institución financiera. Proporcionamos información educativa y orientativa sobre temas digitales y financieros.</p>
                 </div>
@@ -190,7 +195,6 @@
 
 
 
-    <!-- Подвал -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -226,7 +230,6 @@
         </div>
     </footer>
 
-    <!-- Уведомление о куках -->
     <div class="cookie-notice hidden">
         <p class="cookie-text">Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, acepta nuestra política de cookies.</p>
         <div class="cookie-buttons">
@@ -235,28 +238,9 @@
         </div>
     </div>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <script>
-        // Скрипт для интерактивных вкладок
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabButtons = document.querySelectorAll('.tab-btn');
-            
-            tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Удаляем активный класс со всех кнопок и контента
-                    tabButtons.forEach(btn => btn.classList.remove('active'));
-                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-                    
-                    // Добавляем активный класс нажатой кнопке
-                    this.classList.add('active');
-                    
-                    // Показываем соответствующий контент
-                    const tabId = this.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.add('active');
-                });
-            });
-        });
+        document.addEventListener("DOMContentLoaded",function(){let t=document.querySelectorAll(".tab-btn");t.forEach(e=>{e.addEventListener("click",function(){t.forEach(t=>t.classList.remove("active")),document.querySelectorAll(".tab-content").forEach(t=>t.classList.remove("active")),this.classList.add("active");let e=this.getAttribute("data-tab");document.getElementById(e).classList.add("active")})})});
     </script>
 </body>
 </html>
