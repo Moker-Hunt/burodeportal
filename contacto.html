@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto de burodeportal.com. Encuentre nuestros datos de contacto para cualquier consulta o información adicional sobre nuestro portal informativo.">
+    <title>Contacto | BuroDePortal</title>
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius-md);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--color-accent2);
+        }
+        
+        .contact-item {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-icon {
+            width: 4rem;
+            height: 4rem;
+            background: var(--gradient2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon svg {
+            width: 2rem;
+            height: 2rem;
+            fill: var(--color-background);
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-label {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-accent1);
+        }
+        
+        .contact-value {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        
+        .contact-value a {
+            color: #fff;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        .contact-value a:hover {
+            color: var(--color-accent2);
+        }
+        
+        .contact-hours {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-hours h3 {
+            margin-bottom: 1.5rem;
+            color: var(--color-accent2);
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+            gap: 2rem;
+        }
+        
+        .hours-item {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: var(--border-radius-sm);
+        }
+        
+        .hours-day {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--color-accent1);
+        }
+        
+        @media (max-width: 700px) {
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .contact-icon {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <a href="index.html" class="navbar-logo">burodeportal.com</a>
+            <button class="navbar-toggle" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Inicio</a></li>
+                <li class="navbar-item"><a href="digital.html" class="navbar-link">Identidad Digital</a></li>
+                <li class="navbar-item"><a href="historial.html" class="navbar-link">Historial Financiero</a></li>
+                <li class="navbar-item"><a href="apps.html" class="navbar-link">Apps Financieras</a></li>
+                <li class="navbar-item"><a href="gastos.html" class="navbar-link">Herramientas</a></li>
+                <li class="navbar-item"><a href="glosario.html" class="navbar-link">Glosario</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Обертка для контента (для блюра при активном уведомлении о куках) -->
+    <div class="content-wrapper">
+        <!-- Герой-секция -->
+        <section class="hero" style="background: var(--gradient4);">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Contacto</h1>
+                    <p class="hero-subtitle">Estamos aquí para responder a tus preguntas sobre información financiera y crediticia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основное содержание -->
+        <section class="section">
+            <div class="container">
+                <!-- Дисклеймер -->
+                <div class="disclaimer">
+                    <p><strong>Aviso importante:</strong> Este sitio web no es una entidad gubernamental ni está afiliado oficialmente con el Buró de Crédito o cualquier otra institución financiera. Proporcionamos información educativa y orientativa sobre temas financieros.</p>
+                </div>
+
+                <h2>Nuestros Datos de Contacto</h2>
+                <p>Si tienes preguntas, comentarios o sugerencias sobre nuestro portal informativo, no dudes en ponerte en contacto con nosotros a través de los siguientes medios:</p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Correo Electrónico</div>
+                            <div class="contact-value"><a href="mailto:support@burodeportal.com">support@burodeportal.com</a></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Teléfono</div>
+                            <div class="contact-value"><a href="tel:+524722361928">+52 47 2236 1928</a></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h3>Horario de Atención</h3>
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <div class="hours-day">Lunes a Viernes</div>
+                                <div class="hours-time">9:00 - 18:00 (Hora de la Ciudad de México)</div>
+                            </div>
+                            <div class="hours-item">
+                                <div class="hours-day">Sábados</div>
+                                <div class="hours-time">10:00 - 14:00 (Hora de la Ciudad de México)</div>
+                            </div>
+                            <div class="hours-item">
+                                <div class="hours-day">Domingos y Días Festivos</div>
+                                <div class="hours-time">Cerrado</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Preguntas Frecuentes</h2>
+                <p>Antes de contactarnos, te invitamos a revisar estas preguntas frecuentes que podrían resolver tus dudas de manera inmediata:</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3 class="card-title">¿Pueden ayudarme a obtener mi reporte de crédito?</h3>
+                        <p>No, no tenemos acceso a los sistemas del Buró de Crédito ni podemos obtener reportes crediticios en nombre de terceros. Para obtener tu reporte, debes contactar directamente al Buró de Crédito a través de sus canales oficiales.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">¿Ofrecen asesoría financiera personalizada?</h3>
+                        <p>No ofrecemos asesoría financiera personalizada. Nuestro sitio proporciona información general y educativa. Para asesoría específica sobre tu situación, te recomendamos consultar a un asesor financiero certificado.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">¿Pueden eliminar información negativa de mi historial crediticio?</h3>
+                        <p>No, no tenemos la capacidad de modificar información en el Buró de Crédito. La información negativa verídica permanece en tu historial por un período determinado según la ley (generalmente hasta 72 meses).</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">¿Cómo puedo sugerir un tema para el sitio?</h3>
+                        <p>Agradecemos tus sugerencias para mejorar nuestro contenido. Puedes enviarnos tus ideas a través de nuestro correo electrónico de contacto.</p>
+                    </div>
+                </div>
+
+                <h2>Compromiso de Respuesta</h2>
+                <p>Nos esforzamos por responder a todas las consultas en un plazo máximo de 48 horas hábiles. Sin embargo, durante períodos de alto volumen de mensajes, la respuesta podría demorarse un poco más. Agradecemos tu paciencia y comprensión.</p>
+
+                <p>Recuerda que no somos una entidad oficial ni tenemos acceso a información crediticia personal. Si necesitas realizar trámites específicos relacionados con tu historial crediticio, te recomendamos contactar directamente a las instituciones correspondientes.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">burodeportal.com</h4>
+                    <p>Portal informativo sobre temas financieros y crediticios en México. Proporcionamos información educativa para ayudar a los mexicanos a entender mejor el sistema financiero.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Secciones</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Inicio</a></li>
+                        <li class="footer-link"><a href="digital.html">Identidad Digital</a></li>
+                        <li class="footer-link"><a href="historial.html">Historial Financiero</a></li>
+                        <li class="footer-link"><a href="apps.html">Apps Financieras</a></li>
+                        <li class="footer-link"><a href="gastos.html">Herramientas</a></li>
+                        <li class="footer-link"><a href="glosario.html">Glosario</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Información</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="about.html">Sobre Nosotros</a></li>
+                        <li class="footer-link"><a href="contacto.html">Contacto</a></li>
+                        <li class="footer-link"><a href="terms.html">Términos de Uso</a></li>
+                        <li class="footer-link"><a href="privacy.html">Política de Privacidad</a></li>
+                        <li class="footer-link"><a href="cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">&copy; 2025 burodeportal.com - Este sitio web no es una entidad gubernamental ni está afiliado oficialmente con ninguna institución financiera.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Уведомление о куках -->
+    <div class="cookie-notice hidden">
+        <p class="cookie-text">Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, acepta nuestra política de cookies.</p>
+        <div class="cookie-buttons">
+            <a href="cookies.html" class="cookie-btn cookie-more">Más información</a>
+            <button class="cookie-btn cookie-accept">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
