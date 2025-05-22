@@ -57,26 +57,19 @@
 (function() {
     const cookieNotice = document.querySelector('.cookie-notice');
     const acceptButton = document.querySelector('.cookie-accept');
-    const content = document.querySelector('.content-wrapper');
     
     // Проверяем, было ли уже принято соглашение о куках
     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
     
     if (!cookiesAccepted && cookieNotice) {
-        // Показываем уведомление и блюрим контент
+        // Показываем уведомление без блюринга контента
         cookieNotice.classList.remove('hidden');
-        if (content) {
-            content.classList.add('cookie-blur');
-        }
         
         // Обработчик для кнопки принятия
         if (acceptButton) {
             acceptButton.addEventListener('click', function() {
                 localStorage.setItem('cookiesAccepted', 'true');
                 cookieNotice.classList.add('hidden');
-                if (content) {
-                    content.classList.remove('cookie-blur');
-                }
             });
         }
     }
